@@ -26,7 +26,7 @@ namespace CustomizeOrderSystem
         {
             if (!authenticate())
             {
-                MessageBox.Show("Please provide values.");
+                MessageBox.Show("Please provide details.");
                 return;
 
             }
