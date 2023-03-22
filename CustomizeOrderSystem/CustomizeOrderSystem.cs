@@ -101,7 +101,6 @@ namespace CustomizeOrderSystem
             scmd.Parameters.AddWithValue("OrderDetail", txt_OrderDetail.Text);
             scmd.Parameters.AddWithValue("getid", getid);
 
-            scmd.ExecuteNonQuery();
             con.Close();
 
             MessageBox.Show("Record updated sucessfully");

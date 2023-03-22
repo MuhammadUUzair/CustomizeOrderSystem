@@ -16,7 +16,7 @@ namespace CustomizeOrderSystem
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new CustomizeOrderSystem());
+            Application.Run(new Login_Form());
         }
     }
 }
