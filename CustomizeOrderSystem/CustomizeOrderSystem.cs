@@ -26,7 +26,7 @@ namespace CustomizeOrderSystem
         {
             if (!authenticate())
             {
-                MessageBox.Show("PLZ FILL BOX");
+                MessageBox.Show("Please provide values.");
                 return;
 
             }
