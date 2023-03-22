@@ -91,5 +91,20 @@ namespace CustomizeOrderSystem
         {
 
         }
+
+        private void btn_UPDATE_Click(object sender, EventArgs e)
+        {
+            con.Open();
+            string query = "update SystemTable set OrderNo=@OrderNo,OrderDetail=@OrderDetail where id=@getid";
+            scmd = new SqlCommand(query, con);
+            scmd.Parameters.AddWithValue("OrderNo", Convert.ToInt32(txt_OrderNo.Text));
+            scmd.Parameters.AddWithValue("OrderDetail", txt_OrderDetail.Text);
+            scmd.Parameters.AddWithValue("getid", getid);
+
+            scmd.ExecuteNonQuery();
+            con.Close();
+
+            MessageBox.Show("Record updated sucessfully");
+        }
     }
 }

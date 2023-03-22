@@ -36,8 +36,9 @@ namespace CustomizeOrderSystem
             this.label3 = new System.Windows.Forms.Label();
             this.dgv = new System.Windows.Forms.DataGridView();
             this.btn_INSERT = new System.Windows.Forms.Button();
-            this.btn_SHOWDATA = new System.Windows.Forms.Button();
             this.btn_DELETE = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.btn_UPDATE = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).BeginInit();
             this.SuspendLayout();
             // 
@@ -106,18 +107,6 @@ namespace CustomizeOrderSystem
             this.btn_INSERT.UseVisualStyleBackColor = false;
             this.btn_INSERT.Click += new System.EventHandler(this.btn_INSERT_Click);
             // 
-            // btn_SHOWDATA
-            // 
-            this.btn_SHOWDATA.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.btn_SHOWDATA.ForeColor = System.Drawing.Color.Black;
-            this.btn_SHOWDATA.Location = new System.Drawing.Point(525, 97);
-            this.btn_SHOWDATA.Name = "btn_SHOWDATA";
-            this.btn_SHOWDATA.Size = new System.Drawing.Size(93, 23);
-            this.btn_SHOWDATA.TabIndex = 2;
-            this.btn_SHOWDATA.Text = "SHOW DATA";
-            this.btn_SHOWDATA.UseVisualStyleBackColor = false;
-            this.btn_SHOWDATA.Click += new System.EventHandler(this.btn_SHOWDATA_Click);
-            // 
             // btn_DELETE
             // 
             this.btn_DELETE.BackColor = System.Drawing.Color.Red;
@@ -129,14 +118,37 @@ namespace CustomizeOrderSystem
             this.btn_DELETE.UseVisualStyleBackColor = false;
             this.btn_DELETE.Click += new System.EventHandler(this.btn_DELETE_Click);
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.button1.ForeColor = System.Drawing.Color.Black;
+            this.button1.Location = new System.Drawing.Point(525, 100);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(93, 23);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "SHOW DATA";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.btn_SHOWDATA_Click);
+            // 
+            // btn_UPDATE
+            // 
+            this.btn_UPDATE.Location = new System.Drawing.Point(525, 60);
+            this.btn_UPDATE.Name = "btn_UPDATE";
+            this.btn_UPDATE.Size = new System.Drawing.Size(93, 23);
+            this.btn_UPDATE.TabIndex = 7;
+            this.btn_UPDATE.Text = "UPDATE";
+            this.btn_UPDATE.UseVisualStyleBackColor = true;
+            this.btn_UPDATE.Click += new System.EventHandler(this.btn_UPDATE_Click);
+            // 
             // CustomizeOrderSystem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Turquoise;
             this.ClientSize = new System.Drawing.Size(658, 413);
+            this.Controls.Add(this.btn_UPDATE);
             this.Controls.Add(this.btn_DELETE);
-            this.Controls.Add(this.btn_SHOWDATA);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btn_INSERT);
             this.Controls.Add(this.dgv);
             this.Controls.Add(this.label2);
@@ -163,7 +175,8 @@ namespace CustomizeOrderSystem
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DataGridView dgv;
         private System.Windows.Forms.Button btn_INSERT;
-        private System.Windows.Forms.Button btn_SHOWDATA;
         private System.Windows.Forms.Button btn_DELETE;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_UPDATE;
     }
 }
