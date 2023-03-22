@@ -26,7 +26,8 @@ namespace CustomizeOrderSystem
         {
             if (!authenticate())
             {
-                MessageBox.Show("Please provide details.");
+                MessageBox.Show("fill all the boxes");
+
                 return;
 
             }
